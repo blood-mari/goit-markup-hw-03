@@ -34,6 +34,27 @@ h3 {
   line-height: 1.17;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container components */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid violet;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Logo site header */
 .logo {
   font-weight: 700;
@@ -74,6 +95,10 @@ h3 {
 }
 
 /* Hero Section */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   font-size: 44px;
   font-weight: 900;
@@ -83,9 +108,17 @@ h3 {
   text-transform: uppercase;
   color: var(--dark-theme-text-color);
   background-color: var(--paragraph-text-color);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  outline: 2px solid violet;
 }
 
 /* Order the option - main button */
+
+button {
+  font-family: inherit;
+}
 
 .button {
   font-size: 16px;
@@ -102,6 +135,14 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 30px;
 }
 
 .button:focus,
@@ -110,24 +151,41 @@ h3 {
   background-color: var(--accent-text-color);
 }
 
-button {
-  font-family: inherit;
-}
-
 /* All Section h2 headers */
+
+.section {
+  margin-top: 94px;
+}
 .section-title {
   font-size: 36px;
   text-align: center;
+
+  margin: 0;
+  padding: 0;
 }
 
 /* All Section h3 headers */
 .features .title {
   font-size: inherit;
   text-transform: uppercase;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+
+/* Advantages features*/
 
 .features p {
   line-height: 1.7;
+  margin: 0;
+}
+
+.features li {
+  margin-right: 30px;
+}
+
+.features li:last-child {
+  margin-right: 0px;
 }
 
 /* Graphic section group */
@@ -135,18 +193,44 @@ button {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   color: var(--dark-theme-text-color);
   background-color: var(--paragraph-text-color);
+
+  margin: 0;
+  padding: 27px 83px;
+  width: 370px;
 }
 
 /* staff style */
+
+.container.block {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.block .section-title {
+  margin-bottom: 50px;
+}
+
 .staff h3 {
   font-size: 16px;
   font-weight: 500;
+
+  margin-top: 30px;
+  margin-bottom: 0;
 }
+
 .staff p {
   font-size: 16px;
   color: var(--paragraph-text-color);
+
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.clients {
+  margin-bottom: 50px;
 }
 
 /* Logo site footer */
@@ -154,6 +238,7 @@ button {
 .footer {
   background-color: var(--background-footer-color);
   color: var(--dark-theme-text-color);
+  margin-top: 94px;
 }
 
 .footer-logo-tail {
