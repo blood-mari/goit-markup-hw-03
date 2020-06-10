@@ -1,0 +1,202 @@
+/* Main text color: black #212121 */
+
+/* link accent  blue #2196f3*/
+
+/* text paragraph grey3 #757575 */
+
+:root {
+  --main-text-color: #212121;
+  --main-background-color: #ffffff;
+  --paragraph-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --dark-theme-text-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --plain-button-color: #f5f4fa;
+  --background-footer-color: #2f303a;
+  --font-body: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-family: var(--font-body);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+/* Logo site header */
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--font-logo);
+  color: var(--accent-text-color);
+  letter-spacing: 0.03em;
+}
+
+.header-logo-tail {
+  color: var(--main-text-color);
+}
+
+.logo:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav,
+.contacts-header {
+  font-weight: 500;
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
+
+.site-nav a {
+  color: var(--main-text-color);
+}
+
+.contacts-header a {
+  color: var(--paragraph-text-color);
+}
+
+.link:focus,
+.link:hover {
+  color: var(--accent-text-color);
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-theme-text-color);
+  background-color: var(--paragraph-text-color);
+}
+
+/* Order the option - main button */
+
+.button {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  color: var(--main-text-color);
+  background-color: var(--plain-button-color);
+}
+
+.button.primary {
+  color: var(--dark-theme-text-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+}
+
+.button:focus,
+.button:hover {
+  color: var(--dark-theme-text-color);
+  background-color: var(--accent-text-color);
+}
+
+button {
+  font-family: inherit;
+}
+
+/* All Section h2 headers */
+.section-title {
+  font-size: 36px;
+  text-align: center;
+}
+
+/* All Section h3 headers */
+.features .title {
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.features p {
+  line-height: 1.7;
+}
+
+/* Graphic section group */
+.examples .examples-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--dark-theme-text-color);
+  background-color: var(--paragraph-text-color);
+}
+
+/* staff style */
+.staff h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.staff p {
+  font-size: 16px;
+  color: var(--paragraph-text-color);
+}
+
+/* Logo site footer */
+
+.footer {
+  background-color: var(--background-footer-color);
+  color: var(--dark-theme-text-color);
+}
+
+.footer-logo-tail {
+  color: var(--dark-theme-text-color);
+}
+
+.address {
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
+.mail,
+.tel {
+  color: var(--footer-contacts-color);
+  line-height: 1.7;
+}
+
+.join-us p {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Portfolio page style */
+
+/* Portfolio title style */
+
+.work-title {
+  font-size: 18px;
+  color: var(--main-text-color);
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-title > p {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.work-type {
+  color: var(--paragraph-text-color);
+}
+
+h2 .description {
+  font-size: 18px;
+  line-height: 1.56;
+}
