@@ -98,7 +98,7 @@
       <!-- Сфера деятельности -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title direction">Чем мы занимаемся</h2>
           <ul class="examples">
             <li>
               <a href="/" class="link"
@@ -226,46 +226,53 @@
 
     <!-- Подвал. Присутствует на всех стр сайта -->
     <footer class="footer">
-      <div>
-        <a href="./index.html" class="logo link"
-          ><span>Web</span> <span class="footer-logo-tail link">Studio</span></a
-        >
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26 <br />
-          <ul class="contacts">
+      <div class="container-footer">
+        <div>
+          <a href="./index.html" class="logo link"
+            ><span>Web</span>
+            <span class="footer-logo-tail link">Studio</span></a
+          >
+          <address class="address">
+            г. Киев, пр-т Леси Украинки, 26 <br />
+            <ul class="contacts">
+              <li>
+                <a href="mailto:info@example.com" class="link mail"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="link tel"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us">
+          <p>присоединяйтесь</p>
+          <ul>
+            <!-- aria-label -тэг для подписи ссылки-иконки или кнопки-иконки, нужен для читалок и индексаторов, воспринимается ими вместо текста/картинки, видимой посетителю сайта -->
             <li>
-              <a href="mailto:info@example.com" class="link mail"
-                >info@example.com</a
-              >
+              <a href="" aria-label="Instagram link" class="link">Instagram</a>
             </li>
             <li>
-              <a href="tel:+380991111111" class="link tel">+38 099 111 11 11</a>
+              <a href="" aria-label="Twitter link" class="link">Twitter</a>
+            </li>
+            <li>
+              <a href="" aria-label="Facebook link" class="link">Facebook</a>
+            </li>
+            <li>
+              <a href="" aria-label="LinkedIn link" class="link">LinkedIn</a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div>
+          <b class="title-form">Подпишитесь на рассылку</b>
+          <a href="" class="button secondary">Подписаться</a>
+          <!-- форма подписки -->
+        </div>
+        <p class="copyright">&copy; 2020 | Developed by GoIT Students</p>
       </div>
-      <div class="join-us">
-        <p>присоединяйтесь</p>
-        <ul>
-          <!-- aria-label -тэг для подписи ссылки-иконки или кнопки-иконки, нужен для читалок и индексаторов, воспринимается ими вместо текста/картинки, видимой посетителю сайта -->
-          <li>
-            <a href="" aria-label="Instagram link" class="link">Instagram</a>
-          </li>
-          <li><a href="" aria-label="Twitter link" class="link">Twitter</a></li>
-          <li>
-            <a href="" aria-label="Facebook link" class="link">Facebook</a>
-          </li>
-          <li>
-            <a href="" aria-label="LinkedIn link" class="link">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <b class="title-form">Подпишитесь на рассылку</b>
-        <a href="" class="button primary">Подписаться</a>
-        <!-- форма подписки -->
-      </div>
-      <p>&copy; 2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
