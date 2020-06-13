@@ -20,15 +20,20 @@
     <header>
       <!-- Навигация по шапке сайта -->
       <div class="container">
+        <a href="./index.html" class="logo link"
+          ><span>Web</span> <span class="header-logo-tail link">Studio</span></a
+        >
         <nav>
-          <a href="./index.html" class="logo link"
-            ><span>Web</span>
-            <span class="header-logo-tail link">Studio</span></a
-          >
           <ul class="site-nav">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+            <li>
+              <a href="./index.html" class="link current nav-link">Студия</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link nav-link">Портфолио</a>
+            </li>
+            <li>
+              <a href="" class="link nav-link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -55,36 +60,44 @@
       </div>
 
       <!-- Преимущества -->
-      <section class="section">
+      <section class="section-features">
         <div class="container">
           <h2 class="section-title">Особенности компании</h2>
           <ul class="features">
-            <li>
-              <img src="./images/antenna.svg" alt="антенна" width="70" />
+            <li class="features-item">
+              <div class="features-img">
+                <img src="./images/antenna.svg" alt="антенна" width="70" />
+              </div>
               <h3 class="title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <img src="./images/clock.svg" alt="часы" width="70" />
+            <li class="features-item">
+              <div class="features-img">
+                <img src="./images/clock.svg" alt="часы" width="70" />
+              </div>
               <h3 class="title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <img src="./images/diagram.svg" alt="диаграмма" width="70" />
+            <li class="features-item">
+              <div class="features-img">
+                <img src="./images/diagram.svg" alt="диаграмма" width="70" />
+              </div>
               <h3 class="title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <img src="./images/astronaut.svg" alt="астронавт" width="70" />
+            <li class="features-item">
+              <div class="features-img">
+                <img src="./images/astronaut.svg" alt="астронавт" width="70" />
+              </div>
               <h3 class="title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
@@ -96,10 +109,10 @@
       </section>
 
       <!-- Сфера деятельности -->
-      <section class="section">
+      <section class="section-we-do">
         <div class="container">
-          <h2 class="section-title direction">Чем мы занимаемся</h2>
-          <ul class="examples">
+          <h2 class="we-do-title">Чем мы занимаемся</h2>
+          <ul class="we-do-list">
             <li>
               <a href="/" class="link"
                 ><img src="./images/laptop.jpg" alt="ноутбук" width="370" />
@@ -123,99 +136,239 @@
       </section>
 
       <!-- Сотрудники компании -->
-      <section class="section">
-        <div class="container block">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="staff">
-            <li>
-              <img
-                src="./images/team-1.jpg"
-                alt="Николай Кучеренко"
-                width="270"
-              />
-              <h3>Николай Кучеренко</h3>
-              <p>Product Designer</p>
-              <ul>
-                <li><a class="link" href="">Instagram</a></li>
-                <li><a class="link" href="">Twitter</a></li>
-                <li><a class="link" href="">Facebook</a></li>
-                <li><a class="link" href="">LinkedIn</a></li>
-              </ul>
+      <section class="section-team">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <div>
+                <img
+                  src="./images/team-1.jpg"
+                  alt="Николай Кучеренко"
+                  width="270"
+                />
+              </div>
+              <div class="team-item-info">
+                <h3>Николай Кучеренко</h3>
+                <p>Product Designer</p>
+                <ul class="team-social">
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Instagram link"
+                      class="link social-link"
+                      >I</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Twitter link"
+                      class="link social-link"
+                      >T</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Facebook link"
+                      class="link social-link"
+                      >F</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="LinkedIn link"
+                      class="link social-link"
+                      >L</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <img src="./images/team-2.jpg" alt="Ольга Иванова" width="270" />
-              <h3>Ольга Иванова</h3>
-              <p>Frontend Developer</p>
-              <ul>
-                <li><a class="link" href="">Instagram</a></li>
-                <li><a class="link" href="">Twitter</a></li>
-                <li><a class="link" href="">Facebook</a></li>
-                <li><a class="link" href="">LinkedIn</a></li>
-              </ul>
+
+            <li class="team-item">
+              <div>
+                <img
+                  src="./images/team-2.jpg"
+                  alt="Ольга Иванова"
+                  width="270"
+                />
+              </div>
+
+              <div class="team-item-info">
+                <h3>Ольга Иванова</h3>
+                <p>Frontend Developer</p>
+                <ul class="team-social">
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Instagram link"
+                      class="link social-link"
+                      >I</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Twitter link"
+                      class="link social-link"
+                      >T</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Facebook link"
+                      class="link social-link"
+                      >F</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="LinkedIn link"
+                      class="link social-link"
+                      >L</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <img
-                src="./images/team-3.jpg"
-                alt="Андрей Шевченко"
-                width="270"
-              />
-              <h3>Андрей Шевченко</h3>
-              <p>Marketing</p>
-              <ul>
-                <li><a class="link" href="">Instagram</a></li>
-                <li><a class="link" href="">Twitter</a></li>
-                <li><a class="link" href="">Facebook</a></li>
-                <li><a class="link" href="">LinkedIn</a></li>
-              </ul>
+
+            <li class="team-item">
+              <div>
+                <img
+                  src="./images/team-3.jpg"
+                  alt="Андрей Шевченко"
+                  width="270"
+                />
+              </div>
+              <div class="team-item-info">
+                <h3>Андрей Шевченко</h3>
+                <p>Marketing</p>
+                <ul class="team-social">
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Instagram link"
+                      class="link social-link"
+                      >I</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Twitter link"
+                      class="link social-link"
+                      >T</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Facebook link"
+                      class="link social-link"
+                      >F</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="LinkedIn link"
+                      class="link social-link"
+                      >L</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <img src="./images/team-4.jpg" alt="Иван Николаев" width="270" />
-              <h3>Иван Николаев</h3>
-              <p>UI Designer</p>
-              <ul>
-                <li><a class="link" href="">Instagram</a></li>
-                <li><a class="link" href="">Twitter</a></li>
-                <li><a class="link" href="">Facebook</a></li>
-                <li><a class="link" href="">LinkedIn</a></li>
-              </ul>
+            <li class="team-item">
+              <div>
+                <img
+                  src="./images/team-4.jpg"
+                  alt="Иван Николаев"
+                  width="270"
+                />
+              </div>
+              <div class="team-item-info">
+                <h3>Иван Николаев</h3>
+                <p>UI Designer</p>
+                <ul class="team-social">
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Instagram link"
+                      class="link social-link"
+                      >I</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Twitter link"
+                      class="link social-link"
+                      >T</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="Facebook link"
+                      class="link social-link"
+                      >F</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      aria-label="LinkedIn link"
+                      class="link social-link"
+                      >L</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Клиенты -->
-      <section class="section">
+      <section class="section-clients">
         <div class="container">
-          <h2 class="section-title clients">Постоянные клиенты</h2>
-          <ul>
-            <li>
-              <a href="./" class="link"
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="clients-list">
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-1.svg" alt="логотип компании 1"
               /></a>
             </li>
-            <li>
-              <a href="./" class="link"
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-2.svg" alt="логотип компании 2"
               /></a>
             </li>
 
-            <li>
-              <a href="./" class="link"
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-3.svg" alt="логотип компании 3"
               /></a>
             </li>
-            <li>
-              <a href="./" class="link"
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-4.svg" alt="логотип компании 4"
               /></a>
             </li>
-            <li>
-              <a href="./" class="link"
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-5.svg" alt="логотип компании 5"
               /></a>
             </li>
-            <li>
-              <a href="./" class="link"
+            <li class="clients-item">
+              <a href="./"
                 ><img src="./images/logo-6.svg" alt="логотип компании 6"
               /></a>
             </li>
@@ -225,22 +378,22 @@
     </main>
 
     <!-- Подвал. Присутствует на всех стр сайта -->
-    <footer class="footer">
-      <div class="container-footer">
+    <footer>
+      <div class="container">
         <div>
           <a href="./index.html" class="logo link"
             ><span>Web</span>
             <span class="footer-logo-tail link">Studio</span></a
           >
-          <address class="address">
-            г. Киев, пр-т Леси Украинки, 26 <br />
+          <address>
             <ul class="contacts">
-              <li>
+              <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="address-item">
                 <a href="mailto:info@example.com" class="link mail"
                   >info@example.com</a
                 >
               </li>
-              <li>
+              <li class="address-item">
                 <a href="tel:+380991111111" class="link tel"
                   >+38 099 111 11 11</a
                 >
@@ -250,29 +403,38 @@
         </div>
         <div class="join-us">
           <p>присоединяйтесь</p>
-          <ul>
+          <ul class="footer-social">
             <!-- aria-label -тэг для подписи ссылки-иконки или кнопки-иконки, нужен для читалок и индексаторов, воспринимается ими вместо текста/картинки, видимой посетителю сайта -->
             <li>
-              <a href="" aria-label="Instagram link" class="link">Instagram</a>
+              <a href="" aria-label="Instagram link" class="link social-link"
+                >I</a
+              >
             </li>
             <li>
-              <a href="" aria-label="Twitter link" class="link">Twitter</a>
+              <a href="" aria-label="Twitter link" class="link social-link"
+                >T</a
+              >
             </li>
             <li>
-              <a href="" aria-label="Facebook link" class="link">Facebook</a>
+              <a href="" aria-label="Facebook link" class="link social-link"
+                >F</a
+              >
             </li>
             <li>
-              <a href="" aria-label="LinkedIn link" class="link">LinkedIn</a>
+              <a href="" aria-label="LinkedIn link" class="link social-link"
+                >L</a
+              >
             </li>
           </ul>
         </div>
-        <div>
+        <div class="container-form">
           <b class="title-form">Подпишитесь на рассылку</b>
-          <a href="" class="button secondary">Подписаться</a>
+
           <!-- форма подписки -->
         </div>
-        <p class="copyright">&copy; 2020 | Developed by GoIT Students</p>
       </div>
+
+      <p class="copyright">&copy; 2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
