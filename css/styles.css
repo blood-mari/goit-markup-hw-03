@@ -39,7 +39,9 @@ h3 {
 }
 
 p,
-h1 {
+h1,
+a,
+img {
   margin: 0;
   padding: 0;
 }
@@ -64,8 +66,8 @@ ul {
 
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 93px;
-  padding-bottom: 94px;
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
 }
 
 header {
@@ -331,6 +333,10 @@ button {
 
 /* Clients section */
 
+.section-clients .container {
+  padding-bottom: 94px;
+}
+
 .clients-title {
   margin-bottom: 50px;
 }
@@ -463,6 +469,7 @@ footer .tel {
 
 .section-examples-work .container {
   padding-top: 68px;
+  padding-bottom: 94px;
 }
 
 .section-examples-work h1 {
@@ -526,7 +533,8 @@ footer .tel {
     0px 1px 1px rgba(0, 0, 0, 0.12);
 
   margin-right: 30px;
-  width: 370px;
+  width: calc((100% - 60px) / 3);
+  /* width: 370px; */
   border: 1px solid #eeeeee;
 }
 
