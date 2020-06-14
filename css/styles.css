@@ -33,6 +33,7 @@ h2,
 h3 {
   font-weight: 700;
   line-height: 1.17;
+
   margin: 0;
   padding: 0;
 }
@@ -48,10 +49,10 @@ a {
 }
 
 ul {
+  list-style: none;
+
   margin: 0;
   padding: 0;
-
-  list-style: none;
 }
 
 /* Container components */
@@ -67,6 +68,13 @@ ul {
   padding-bottom: 94px;
 }
 
+header {
+  font-weight: 500;
+  line-height: 1.14;
+
+  border: 1px solid #e5e5e5;
+}
+
 /* Logo site header */
 .logo {
   font-weight: 700;
@@ -78,10 +86,6 @@ ul {
 
 .header-logo-tail {
   color: var(--main-text-color);
-}
-
-.logo:focus {
-  color: var(--accent-text-color);
 }
 
 header .logo {
@@ -101,9 +105,6 @@ header .container {
 .site-nav,
 .contacts-header {
   display: flex;
-
-  font-weight: 500;
-  line-height: 1.14;
 }
 
 .site-nav li + li {
@@ -115,11 +116,11 @@ header .container {
 }
 
 .site-nav .nav-link {
+  color: var(--main-text-color);
+
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  color: var(--main-text-color);
 }
 
 .contacts-header {
@@ -127,11 +128,11 @@ header .container {
 }
 
 .contacts-header .link {
+  color: var(--paragraph-text-color);
+
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-
-  color: var(--paragraph-text-color);
 }
 
 .contacts-header li + li {
@@ -141,11 +142,10 @@ header .container {
 /* Hero Section */
 .hero {
   text-align: center;
+  background-color: var(--paragraph-text-color);
 
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background-color: var(--paragraph-text-color);
 }
 
 .hero-title {
@@ -172,6 +172,7 @@ button {
   text-align: center;
   color: var(--main-text-color);
   background-color: var(--plain-button-color);
+
   border-radius: 4px;
   border: 1px solid transparent;
 }
@@ -211,7 +212,7 @@ button {
 /* h3 style */
 
 .section-features .section-title {
-  display: none;
+  color: var(--dark-theme-text-color);
 }
 
 .features .title {
@@ -324,6 +325,7 @@ button {
 .team-item-info {
   text-align: center;
   background-color: var(--main-background-color);
+
   padding: 30px 32px 24px;
 }
 
@@ -340,11 +342,11 @@ button {
 
 .clients-item a {
   text-align: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 90px;
-
   display: flex;
   justify-content: center;
 }
@@ -362,13 +364,13 @@ footer {
 }
 
 footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   padding-top: 45px;
   padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 footer a,
@@ -403,6 +405,7 @@ footer .tel {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.14;
+
   margin-bottom: 20px;
 }
 
@@ -430,13 +433,13 @@ footer .tel {
 }
 
 .social-link {
-  display: block;
-  padding: 12px;
-
-  border: 1px solid trans;
-  border-radius: 500%;
   color: var(--dark-theme-text-color);
   background: rgba(255, 255, 255, 0.1);
+
+  display: block;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 500%;
 }
 
 .copyright {
@@ -444,6 +447,7 @@ footer .tel {
   line-height: 2;
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
+
   padding-top: 18px;
   padding-bottom: 21px;
 }
@@ -462,8 +466,8 @@ footer .tel {
 }
 
 .section-examples-work h1 {
+  color: var(--dark-theme-text-color);
   text-align: center;
-  display: none;
 }
 
 .examples-work-list {
@@ -476,6 +480,13 @@ footer .tel {
 
 .examples-work-list li + li {
   margin-left: 8px;
+}
+
+.portfolio-button {
+  margin: 0;
+  padding: 6px 22px;
+  min-width: 75px;
+  min-height: 38px;
 }
 
 .work-title {
@@ -500,6 +511,7 @@ footer .tel {
   background-color: var(--accent-text-color);
   color: var(--dark-theme-text-color);
 
+  display: none;
   padding: 63px 24px;
 }
 
@@ -509,9 +521,13 @@ footer .tel {
 }
 
 .work-list-item {
+  background-color: #ffffff;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+
+  margin-right: 30px;
   width: 370px;
   border: 1px solid #eeeeee;
-  margin-right: 30px;
 }
 
 .work-list-item:nth-child(3n) {
