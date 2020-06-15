@@ -526,6 +526,10 @@ footer .tel {
   padding: 63px 24px;
 }
 
+.work-list-item img {
+  display: block;
+}
+
 .work-list {
   display: flex;
   flex-wrap: wrap;
