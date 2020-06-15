@@ -155,9 +155,13 @@ header .container {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  width: 50%;
   text-align: center;
   text-transform: uppercase;
   color: var(--dark-theme-text-color);
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Order the option - main button */
