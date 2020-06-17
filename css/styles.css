@@ -330,11 +330,9 @@ button {
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.team-item img {
-  display: block;
+   border-radius:  0px 0px 4px 4px;
+  overflow: hidden;
+  border: #afb1b8;
 }
 
 .team-item-info {
@@ -342,6 +340,7 @@ button {
   background-color: var(--main-background-color);
 
   padding: 30px 32px 24px;
+
 }
 
 /* Clients section */
@@ -532,8 +531,11 @@ footer .tel {
 }
 
 .work-list-item img,
-.we-do-item img {
+.we-do-item img,
+.team-item img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .work-list {
@@ -549,7 +551,6 @@ footer .tel {
   margin-right: 30px;
   width: calc((100% - 60px) / 3);
   /* width: 370px; */
-  border: 1px solid #eeeeee;
 }
 
 .work-list-item:nth-child(3n) {
@@ -561,5 +562,8 @@ footer .tel {
 }
 
 .work-item-info {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
 }
