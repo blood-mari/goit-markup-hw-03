@@ -66,8 +66,6 @@ ul {
 
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 header {
@@ -203,6 +201,13 @@ button {
   background-color: var(--accent-text-color);
 }
 
+/* Main section style */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* All Section h2 headers */
 
 .section-title,
@@ -217,11 +222,7 @@ button {
 
 /* h3 style */
 
-.section-features .section-title {
-  color: var(--dark-theme-text-color);
-}
-
-.features .title {
+.features-list .title {
   font-size: inherit;
   text-transform: uppercase;
 
@@ -229,12 +230,12 @@ button {
   margin-bottom: 10px;
 }
 
-.features {
+.features-list {
   display: flex;
 }
 
 .features-item {
-  width: calc((100% - 30 * 3) / 4);
+  width: calc((100% - 30px * 3) / 4);
 }
 
 .features-item:not(:first-child) {
@@ -254,7 +255,7 @@ button {
 }
 /* Advantages features*/
 
-.section-features .container {
+.features-padding {
   padding-top: 52px;
 }
 
@@ -265,7 +266,7 @@ button {
 
 /* Graphic section group */
 
-.section-we-do .container {
+.section-we-do{
   padding-top: 0;
 }
 
@@ -288,10 +289,10 @@ button {
 }
 
 .we-do-item {
-  width: calc((100% - 30 * 2) / 3);
+  width: calc((100% - 30px * 2) / 3);
 }
 
-/* staff style */
+/* team style */
 
 .section-team {
   background-color: var(--section-staff-color);
@@ -326,11 +327,11 @@ button {
 }
 
 .team-item {
-  width: calc((100% - 30 * 3) / 4);
+  width: calc((100% - 30px * 3) / 4);
 
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
-   border-radius:  0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   border: #afb1b8;
 }
@@ -340,7 +341,6 @@ button {
   background-color: var(--main-background-color);
 
   padding: 30px 32px 24px;
-
 }
 
 /* Clients section */
@@ -375,16 +375,18 @@ button {
 footer {
   background-color: var(--background-footer-color);
   color: var(--dark-theme-text-color);
+
 }
 
 footer .container {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  padding-top: 45px;
-  padding-bottom: 28px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  padding-top: 45px;
+  padding-bottom: 28px;
 }
 
 footer a,
@@ -476,11 +478,11 @@ footer .tel {
 
 /* Portfolio title style */
 
-.section-examples-work .container {
+.section.less-padding {
   padding-top: 68px;
 }
 
-.section-examples-work h1 {
+.hidden {
   color: var(--dark-theme-text-color);
   text-align: center;
 }
@@ -500,8 +502,6 @@ footer .tel {
 .portfolio-button {
   margin: 0;
   padding: 6px 22px;
-  min-width: 75px;
-  min-height: 38px;
 }
 
 .work-title {
