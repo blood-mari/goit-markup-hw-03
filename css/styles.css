@@ -375,7 +375,7 @@ footer {
 }
 
 footer .container {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 
   display: flex;
   justify-content: space-between;
@@ -429,7 +429,7 @@ footer .tel {
   letter-spacing: 0.06em;
   line-height: 1.88;
 
-  display: inline-block;
+  display: block;
   padding: 10px 29px;
   margin-top: 20px;
   min-width: 200px;
@@ -455,7 +455,7 @@ footer .tel {
   border-radius: 500%;
 }
 
-.copyright {
+/* .copyright {
   font-size: 12px;
   line-height: 2;
   color: rgba(255, 255, 255, 0.4);
@@ -463,7 +463,7 @@ footer .tel {
 
   padding-top: 18px;
   padding-bottom: 21px;
-}
+} */
 
 .link:focus,
 .link:hover {
