@@ -266,7 +266,7 @@ button {
 
 /* Graphic section group */
 
-.section-we-do{
+.section-we-do {
   padding-top: 0;
 }
 
@@ -283,9 +283,6 @@ button {
   text-align: center;
   color: var(--dark-theme-text-color);
   background-color: var(--paragraph-text-color);
-
-  /* padding: 27px 80px;
-  width: 370px; */
 }
 
 .we-do-item {
@@ -375,7 +372,6 @@ button {
 footer {
   background-color: var(--background-footer-color);
   color: var(--dark-theme-text-color);
-
 }
 
 footer .container {
@@ -395,7 +391,7 @@ footer a,
 }
 
 footer .logo {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 .footer-logo-tail {
@@ -550,7 +546,6 @@ footer .tel {
 
   margin-right: 30px;
   width: calc((100% - 60px) / 3);
-  /* width: 370px; */
 }
 
 .work-list-item:nth-child(3n) {
