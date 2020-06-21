@@ -57,6 +57,19 @@ ul {
   padding: 0;
 }
 
+/* Hidden text */
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
 /* Container components */
 
 .container {
@@ -210,7 +223,6 @@ button {
 
 /* All Section h2 headers */
 
-.section-title,
 .we-do-title,
 .team-title,
 .clients-title {
@@ -255,11 +267,7 @@ button {
 }
 /* Advantages features*/
 
-.features-padding {
-  padding-top: 52px;
-}
-
-.features p {
+.features-item p {
   line-height: 1.7;
   color: var(--paragraph-text-color);
 }
@@ -283,6 +291,8 @@ button {
   text-align: center;
   color: var(--dark-theme-text-color);
   background-color: var(--paragraph-text-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .we-do-item {
@@ -351,15 +361,15 @@ button {
   justify-content: space-between;
 }
 
-.clients-item a {
-  text-align: center;
-
+.clients-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 90px;
   display: flex;
   justify-content: center;
+
+  align-items: center;
 }
 
 .clients-item a:hover,
@@ -412,7 +422,7 @@ footer .tel {
   color: var(--footer-contacts-color);
 }
 
-.join-us p,
+.join-us > p,
 .title-form {
   font-weight: 700;
   text-transform: uppercase;
@@ -474,15 +484,6 @@ footer .tel {
 
 /* Portfolio title style */
 
-.section.less-padding {
-  padding-top: 68px;
-}
-
-.hidden {
-  color: var(--dark-theme-text-color);
-  text-align: center;
-}
-
 .examples-work-list {
   margin-bottom: 34px;
   padding-bottom: 16px;
@@ -530,7 +531,7 @@ footer .tel {
 .we-do-item img,
 .team-item img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
